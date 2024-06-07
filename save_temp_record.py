@@ -33,7 +33,9 @@ def update_google_sheet(state, avg_temp, workbook_sheet):
 
 def save_daily_record(states):
     cred = os.getenv("GOOGLE_APPLICATION_CREDENTIALS") 
-    url = "https://docs.google.com/spreadsheets/d/1PcTnb59FcwhrKYhC9E92BjQvqezQo5KQqbi4oiUKEGc/edit#gid=0"
+    # url = "https://docs.google.com/spreadsheets/d/1PcTnb59FcwhrKYhC9E92BjQvqezQo5KQqbi4oiUKEGc/edit#gid=0"
+
+    url="https://docs.google.com/spreadsheets/d/1M2ZVt2DO_ZOfjWuBATF2F6NAqWhpidlmrOLXlao8MYM/edit#gid=0"
     temp_data_path = "temperature_data.json"
     
     workbook_sheet = access_spreadsheet(cred, url)

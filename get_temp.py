@@ -64,7 +64,7 @@ def save_data(data, filename):
 if __name__ == '__main__':
     states = [
         "Akure", "Abuja", "Kano", "Lagos", "Port Harcourt",
-        "Ibadan", "Benin City", "Calabar", "Abeokuta", 
+        "Ibadan", "Benin City", "Calabar", "Abeokuta"
     ]
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(get_temp, states)
